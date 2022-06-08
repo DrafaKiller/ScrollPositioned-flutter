@@ -3,7 +3,8 @@
 
 # Scroll Positioned
 
-Allows you to position widgets fixed along with a scroll. It can be positioned relative to the parent widget, or the absolute position.
+Allows you to position widgets fixed along with a scroll. It can be positioned relative to the parent widget, or the absolute position.´
+Best used with a Scrollable, like a ListView, but can be used on its own.
 
 This uses the widgets `Positioned` and `Stack`, if there isn't a stack it will create one for you.
 
