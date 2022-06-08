@@ -1,8 +1,6 @@
 # Example 1
 
-<center>
-	<img src="https://user-images.githubusercontent.com/42767829/172643871-f366b2a8-731a-4f1f-98cb-87eead37fe8a.gif" width=200>
-</center>
+<img src="https://user-images.githubusercontent.com/42767829/172643871-f366b2a8-731a-4f1f-98cb-87eead37fe8a.gif" width=200 align="center">
 
 <br>
 
@@ -41,9 +39,7 @@ ListView(
 
 # Example 2
 
-<center>
-	<img src="https://user-images.githubusercontent.com/42767829/172622987-8503d003-8c15-496a-b654-40c520441c15.gif" width=200>
-</center>
+<img src="https://user-images.githubusercontent.com/42767829/172622987-8503d003-8c15-496a-b654-40c520441c15.gif" width=200 align="center">
 
 <br>
 
@@ -108,9 +104,7 @@ ListView(
 
 # Example 3
 
-<center>
-	<img src="https://user-images.githubusercontent.com/42767829/172634476-7bcdf257-bb36-4530-8912-8f0d4a9dbee3.gif" width=200>
-</center>
+<img src="https://user-images.githubusercontent.com/42767829/172634476-7bcdf257-bb36-4530-8912-8f0d4a9dbee3.gif" width=200 align="center">
 
 <br>
 
