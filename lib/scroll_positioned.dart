@@ -3,6 +3,11 @@ library scroll_positioned;
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+
+/// # Scroll Positioned
+/// 
+/// Allows you to position widgets fixed along with a scroll. It can be positioned relative to the parent widget, or the absolute position.
+/// Best used with a Scrollable, like a ListView, but can be used on its own.
 class ScrollPositioned extends StatefulWidget {
   final Widget child;
   final ScrollController? controller;
@@ -17,6 +22,10 @@ class ScrollPositioned extends StatefulWidget {
 
   final bool isAbsolute;
 
+  /// ## Scroll Positioned
+  /// 
+  /// Allows you to position widgets fixed along with a scroll. It can be positioned relative to the parent widget, or the absolute position.
+  /// Best used with a Scrollable, like a ListView, but can be used on its own.
   const ScrollPositioned({
     super.key,
     required this.child,
@@ -32,6 +41,12 @@ class ScrollPositioned extends StatefulWidget {
   }) : 
     isAbsolute = false;
   
+  /// ## Scroll Positioned - Expand
+  /// 
+  /// Allows you to position widgets fixed along with a scroll. It can be positioned relative to the parent widget, or the absolute position.
+  /// Best used with a Scrollable, like a ListView, but can be used on its own.
+  /// 
+  /// Extends relative to the parent widget, in practice, sets top, right, bottom and left to 0. Covers the entire parent.
   const ScrollPositioned.expand({
     super.key,
     required this.child,
@@ -47,6 +62,16 @@ class ScrollPositioned extends StatefulWidget {
     
     isAbsolute = false;
   
+  /// ## Scroll Positioned - Absolute
+  /// 
+  /// Allows you to position widgets fixed along with a scroll. It can be positioned relative to the parent widget, or the absolute position.
+  /// Best used with a Scrollable, like a ListView, but can be used on its own.
+  /// 
+  /// Set the position to the absolute position, relative to the screen.
+  /// 
+  /// * `bottom` and `left` cannot be set.
+  /// 
+  /// If you want the widget size to cover the whole screen, use `MediaQuery.of(context).size`.
   const ScrollPositioned.absolute({
     super.key,
     required this.child,
