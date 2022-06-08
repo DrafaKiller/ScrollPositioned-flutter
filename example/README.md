@@ -115,7 +115,9 @@ ListView(
 <br>
 
 ```dart
-final size = MediaQuery.of(context).size;ListView(
+final size = MediaQuery.of(context).size;
+
+ListView(
 	children: [
 		SizedBox(
 			height: 200,
