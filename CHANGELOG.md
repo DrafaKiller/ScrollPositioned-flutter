@@ -15,4 +15,4 @@ Fixed:
 
 ## 0.0.1
 
-Initial release: ScrollPositionedw
+Initial release: ScrollPositioned
