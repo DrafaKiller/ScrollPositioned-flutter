@@ -2,6 +2,7 @@
 
 Added:
 * `flutter_lints` developer dependency
+* Interactive exemples with DartPad
 
 Fixed:
 * Code improvements *(lints)*

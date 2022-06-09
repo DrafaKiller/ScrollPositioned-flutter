@@ -139,7 +139,7 @@ class _ScrollPositionedState extends State<ScrollPositioned> {
           top: offset,
           width: widget.width,
           height: widget.height,
-          child: AbsolutePositioned(child: widget.child, offset: Offset(widget.top ?? 0, widget.left ?? 0)),
+          child: AbsolutePositioned(offset: Offset(widget.top ?? 0, widget.left ?? 0), child: widget.child),
         );
       } else {
         resultWidget = Positioned(
