@@ -1,3 +1,17 @@
+## 0.0.4
+
+Added:
+* Documentation to `AbsolutePositioned`
+
+Fixed:
+* Reversed axis in `ScrollPositioned`
+
+Changed:
+* Moved `AbsolutePositioned` to a different file
+
+Removed:
+* Unused `position` variable
+
 ## 0.0.3
 
 Added:

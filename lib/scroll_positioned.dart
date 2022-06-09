@@ -2,6 +2,7 @@ library scroll_positioned;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:scroll_positioned/absolute_positioned.dart';
 
 
 /// # Scroll Positioned
@@ -139,7 +140,7 @@ class _ScrollPositionedState extends State<ScrollPositioned> {
           top: offset,
           width: widget.width,
           height: widget.height,
-          child: AbsolutePositioned(offset: Offset(widget.top ?? 0, widget.left ?? 0), child: widget.child),
+          child: AbsolutePositioned(offset: Offset(widget.left ?? 0, widget.top ?? 0), child: widget.child),
         );
       } else {
         resultWidget = Positioned(
@@ -187,43 +188,5 @@ class _ScrollPositionedState extends State<ScrollPositioned> {
 
   void _offsetChanged() {
     if (mounted) setState(() => offset = (controller?.offset ?? 0) - position);
-  }
-}
-
-class AbsolutePositioned extends StatefulWidget {
-  const AbsolutePositioned({
-    Key? key,
-    required this.child,
-    this.offset = Offset.zero,
-  }) : super(key: key);
-
-  final Widget child;
-  final Offset offset;
-
-  @override
-  State<AbsolutePositioned> createState() => _AbsolutePositionedState();
-}
-
-class _AbsolutePositionedState extends State<AbsolutePositioned> {
-  RenderBox? render;
-  Offset? position;
-
-  @override
-  void initState() {
-    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      if (mounted) {
-        final render = context.findRenderObject();
-        if (render is RenderBox && mounted) setState(() => this.render = render);
-      }
-    });
-    super.initState();
-  }
-  
-  @override
-  Widget build(BuildContext context) {
-    return Transform.translate(
-      offset: (render?.localToGlobal(Offset.zero) ?? Offset.zero) * -1 + widget.offset,
-      child: widget.child,
-    );
   }
 }
