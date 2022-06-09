@@ -158,7 +158,7 @@ class _ScrollPositionedState extends State<ScrollPositioned> {
           left: offset,
           width: widget.width,
           height: widget.height,
-          child: AbsolutePositioned(child: widget.child, offset: Offset(widget.left ?? 0, widget.top ?? 0)),
+          child: AbsolutePositioned(offset: Offset(widget.left ?? 0, widget.top ?? 0), child: widget.child),
         );
       } else {
         resultWidget = Positioned(
@@ -186,7 +186,7 @@ class _ScrollPositionedState extends State<ScrollPositioned> {
   }
 
   void _offsetChanged() {
-    if (mounted) setState(() => this.offset = (controller?.offset ?? 0) - position);
+    if (mounted) setState(() => offset = (controller?.offset ?? 0) - position);
   }
 }
 

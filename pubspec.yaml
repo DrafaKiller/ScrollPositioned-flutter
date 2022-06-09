@@ -1,6 +1,6 @@
 name: scroll_positioned
 description: Allows to position widgets fixed along with a scroll. Can be positioned relative to the parent, or the absolute position. Best used with a Scrollable, but can be used on its own.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/DrafaKiller/ScrollPositioned-flutter
 
 environment:
@@ -10,3 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+    
+dev_dependencies: 
+  flutter_lints: ^2.0.1

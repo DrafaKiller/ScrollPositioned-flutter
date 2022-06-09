@@ -1,3 +1,11 @@
+## 0.0.3
+
+Added:
+* `flutter_lints` developer dependency
+
+Fixed:
+* Code improvements *(lints)*
+
 ## 0.0.2
 
 Fixed:
@@ -5,4 +13,4 @@ Fixed:
 
 ## 0.0.1
 
-Initial release: ScrollPositioned
+Initial release: ScrollPositionedw
