@@ -6,6 +6,7 @@ Added:
 
 Fixed:
 * Code improvements *(lints)*
+* Example 2 GIF had a different fps 
 
 ## 0.0.2
 
