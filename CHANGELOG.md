@@ -1,3 +1,8 @@
+## 0.0.5
+
+Fixed:
+* Force refresh state after loaded, to asure that it's positioned correctly.
+
 ## 0.0.4
 
 Added:

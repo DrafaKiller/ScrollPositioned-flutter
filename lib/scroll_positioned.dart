@@ -117,9 +117,14 @@ class _ScrollPositionedState extends State<ScrollPositioned> {
       axis = controller!.position.axis;
       offset = controller!.offset;
       position = 0;
-
+      
       controller?.addListener(_offsetChanged);
     }
+
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      if (mounted) setState(() {});
+    });
+
     super.didChangeDependencies();
   }
 

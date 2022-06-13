@@ -33,7 +33,7 @@ class _AbsolutePositionedState extends State<AbsolutePositioned> {
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       if (mounted) {
         final render = context.findRenderObject();
-        if (render is RenderBox && mounted) setState(() => this.render = render);
+        if (render is RenderBox) setState(() => this.render = render);
       }
     });
     super.didChangeDependencies();
